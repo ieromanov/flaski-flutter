@@ -1,2 +1,2 @@
 # flaski-flutter
-news modile app on flutter
+Switched to init branch
