@@ -1,0 +1,46 @@
+name: flaski
+description: A new Flutter project.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.0.0-dev.68.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: "0.12.0"
+  font_awesome_flutter: "8.2.0"
+
+  cupertino_icons: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+   - assets/images/
+   - assets/api.json
+
+  fonts:
+    - family: GoogleSans-Regular
+      fonts:
+        - asset: assets/fonts/GoogleSans/GoogleSans-Regular.ttf
+    - family: GoogleSans-Bold
+      fonts:
+        - asset: assets/fonts/GoogleSans/GoogleSans-Bold.ttf
+    - family: GoogleSans-Medium
+      fonts:
+        - asset: assets/fonts/GoogleSans/GoogleSans-Medium.ttf
+    - family: GoogleSans-Italic
+      fonts:
+        - asset: assets/fonts/GoogleSans/GoogleSans-Italic.ttf
+    - family: GoogleSans-BoldItalic
+      fonts:
+        - asset: assets/fonts/GoogleSans/GoogleSans-BoldItalic.ttf
+    - family: GoogleSans-MediumItalic
+      fonts:
+        - asset: assets/fonts/GoogleSans/GoogleSans-MediumItalic.ttf
