@@ -5,18 +5,18 @@ import 'dart:async';
 import 'dart:convert';
 
 import 'package:flaski/components/Cards/Card.dart';
-import 'package:flaski/helpers/News.dart';
+import 'package:flaski/models/post.dart';
 
 Widget newsList () {
-	Future<List<News>> fetchNews() async {
+	Future<List<Post>> fetchNews() async {
 		final response = await http.get('https://newsapi.org/v2/top-headlines?sources=google-news-ru&apiKey=a76633b8e5634ea48e1d40e903935d35');
 
 		final articles = json.decode(response.body)['articles'];
 
-		return articles.map<News>((article) => News.fromJson(article)).toList();
+		return articles.map<Post>((article) => Post.fromJson(article)).toList();
 	}
 
-	return FutureBuilder<List<News>>(
+	return FutureBuilder<List<Post>>(
 		future: fetchNews(),
 		builder: (context, snapshot) {
 		if (snapshot.hasError) print(snapshot.error);

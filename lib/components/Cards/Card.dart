@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-import 'package:flaski/helpers/News.dart';
+import 'package:flaski/models/post.dart';
 
 class NewsCard extends StatefulWidget {
 
-	final News article;
+	final Post article;
 
 	NewsCard({this.article});
 
@@ -28,8 +28,8 @@ class _NewsCardState extends State<NewsCard> {
 				boxShadow: [
 					BoxShadow(
 						color: Colors.black,
-						blurRadius: 10.0,
-						spreadRadius: 0.1
+						blurRadius: 5.0,
+						spreadRadius: 0.05
 					),
 				],
 				image: new DecorationImage(
